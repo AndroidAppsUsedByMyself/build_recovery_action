@@ -25,7 +25,7 @@ jobs:
         
     - name: Addon ENV
       run: |
-        TARGET_SUPPORTS_64_BIT_APPS := false
+        echo "TARGET_SUPPORTS_64_BIT_APPS=false" >> $GITHUB_ENV
 
     - name: Remove Useless Package
       run: |
